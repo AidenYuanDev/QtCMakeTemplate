@@ -32,7 +32,9 @@ endif()
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 # 包含库文件
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE 
+  Qt${QT_VERSION_MAJOR}::Widgets
+)
 
 # 设置编译选项
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
